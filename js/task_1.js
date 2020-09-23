@@ -2,11 +2,11 @@ const itemsList = document.querySelectorAll('.item');
 
 console.log(`В списке ${itemsList.length} категории.`);
 
- 
-function categories(){
-const heading = document.querySelector('h2');
-console.log(heading.textContent);
-const list = document.querySelectorAll('.item ul');
-console.log(`Количество Элементов: ${list.length}`);
-};
-itemsList.forEach(categories)
+
+
+Array.prototype.forEach.call(itemsList, (element) => {
+    const heading = element.querySelector('h2').innerHTML; 
+    const itemsAmount = element.querySelectorAll('li').length;
+    console.log(`Категория: ${heading}  `);
+    console.log(`Количество элементов: ${itemsAmount}`)
+});
