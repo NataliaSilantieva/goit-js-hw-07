@@ -10,3 +10,4 @@ Array.prototype.forEach.call(itemsList, (element) => {
     console.log(`Категория: ${heading}  `);
     console.log(`Количество элементов: ${itemsAmount}`)
 });
+
