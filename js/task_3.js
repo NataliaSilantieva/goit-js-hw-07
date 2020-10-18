@@ -21,13 +21,12 @@ const images = [
   ul.insertAdjacentHTML('beforeend', gallery)
 
   
-    function createGallery (images){
-    return images.map(({url, alt}) => {
+    function createGallery(images){
+      return images.map(({url, alt}) => {
     
-    return `<li class="image">
+      return `<li class="image">
     <a href=""><img src="${url}" alt="${alt}" width="1260">
             </li>`;
-
    }).join('');
 
   }
