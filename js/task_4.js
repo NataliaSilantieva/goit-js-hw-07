@@ -11,7 +11,7 @@ let counterValue = value.textContent;
 decrementButton.addEventListener('click',decrement);
 incrementButton.addEventListener('click', increment);
 
-function decrement (evt){
+function decrement (){
     
      counterValue -= 1;
      value.textContent = counterValue;
