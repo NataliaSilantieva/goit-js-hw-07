@@ -4,7 +4,7 @@ console.log(`В списке ${itemsList.length} категории.`);
 
 
 
-Array.prototype.forEach.call(itemsList, (element) => {
+Array.from(itemsList).forEach.call( (element) => {
     const heading = element.querySelector('h2').innerHTML; 
     const itemsAmount = element.querySelectorAll('li').length;
     console.log(`Категория: ${heading}  `);
